@@ -18,4 +18,7 @@ abcjs.renderAbc = require('./src/api/abc_tunebook_svg');
 var editor = require('./src/edit/abc_editor');
 abcjs['Editor'] = editor;
 
+var interactive_editor = require('./src/iedit/abc_interactive_editor');
+abcjs['InteractiveEditor'] = interactive_editor;
+
 module.exports = abcjs;

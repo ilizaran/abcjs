@@ -18,6 +18,7 @@ module.exports = (env) => {
 			filename: outputFilename,
 			path: path.join(__dirname, "bin")
 		},
+		watch: true,
 		module: {
 			rules: [
 				{
@@ -28,12 +29,12 @@ module.exports = (env) => {
 			]
 		},
 		plugins: [
-			new UglifyJsWebpackPlugin({
-				extractComments: {
-					condition: /\!$/,
-					banner: banner
-				}
-			})
+			// new UglifyJsWebpackPlugin({
+			// 	extractComments: {
+			// 		condition: /\!$/,
+			// 		banner: banner
+			// 	}
+			// })
 		]
 	};
 };

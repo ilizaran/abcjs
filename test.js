@@ -25,6 +25,9 @@ abcjs['write'] = { EngraverController: engraverController };
 var editor = require('./src/edit/abc_editor');
 abcjs['Editor'] = editor;
 
+var interactive_editor = require('./src/iedit/abc_interactive_editor');
+abcjs['InteractiveEditor'] = interactive_editor;
+
 var midi = require('./src/midi/abc_midi_controls');
 var sequence = require('./src/midi/abc_midi_sequencer');
 var flatten = require('./src/midi/abc_midi_flattener');
